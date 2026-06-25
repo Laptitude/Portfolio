@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alexis Lenoir — Portfolio</title>
+  <title>Alexis Lenoir — Développeur Web</title>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -27,17 +27,15 @@
   <!-- Hero -->
   <section id="hero">
     <div class="hero-content">
-      <p class="hero-eyebrow">Disponible</p>
+      <p class="hero-eyebrow">• Disponible pour de nouvelles missions · Rennes, France</p>
       <h1 class="hero-name">Alexis<br>Lenoir</h1>
-      <p class="hero-role">
-        Je construis des <span class="typed" id="typed-text"></span><span class="cursor-blink"></span>
-      </p>
+      <p class="hero-role">Technicien IT &amp; Développeur Web</p>
+
       <p class="hero-desc">
-        Je mets le support terrain au service du développement pour que les outils qu'on livre soient ceux que les équipes veulent vraiment utiliser — du ticket d'incident à la mise en production[...]
+        Je combine support technique terrain et développement web pour fiabiliser les outils du quotidien — du poste de travail à l'application métier.
       </p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="#projects">Voir mes projets</a>
-        <a class="btn btn-ghost" href="#contact">Me contacter</a>
+        <a class="btn btn-primary" href="#experience">Découvrir mon parcours</a>
       </div>
     </div>
 
@@ -177,7 +175,7 @@
         <p class="timeline-date">2024 — Aujourd'hui</p>
         <h3 class="timeline-title">Technicien Déploiement IMAC</h3>
         <p class="timeline-company">SPIE — CHU de Rennes</p>
-        <p class="timeline-desc">Gestion du cycle de vie des équipements IT sur un parc standardisé. Déploiement d'images système, installation et configuration de postes de travail, maintenance du matériel informatique, support utilisateur et gestion d'inventaire.</p>
+        <p class="timeline-desc">Gestion du cycle de vie des équipements IT sur un parc standardisé. Déploiement d'images système, installation et configuration de postes de travail, maintena[...]
       </div>
 
       <div class="timeline-item">
@@ -217,7 +215,7 @@
     <h2 class="contact-big">Travaillons<br><span>ensemble.</span></h2>
     <p class="contact-sub">Un projet en tête ? Une équipe à renforcer ? Je lis tous mes emails.</p>
     <a class="contact-email" href="mailto:alex.finlande@gmail.com">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0[...]
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2[...]"/>
       alex.finlande@gmail.com
     </a>
     <div class="social-links">
@@ -249,29 +247,6 @@
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 30);
     });
-
-    // Typed effect
-    const words = [
-      'interfaces qui respirent.',
-      'APIs qui tiennent la charge.',
-      'expériences qui durent.',
-      'produits, pas des prototypes.'
-    ];
-    let wi = 0, ci = 0, deleting = false;
-    const el = document.getElementById('typed-text');
-
-    function type() {
-      const word = words[wi];
-      if (!deleting) {
-        el.textContent = word.slice(0, ++ci);
-        if (ci === word.length) { deleting = true; setTimeout(type, 1800); return; }
-      } else {
-        el.textContent = word.slice(0, --ci);
-        if (ci === 0) { deleting = false; wi = (wi + 1) % words.length; }
-      }
-      setTimeout(type, deleting ? 40 : 65);
-    }
-    setTimeout(type, 800);
 
     // Skill bars — IntersectionObserver
     const fills = document.querySelectorAll('.skill-fill');
