@@ -9,8 +9,8 @@
   --text:     #E8E4FF;
   --muted:    #7A7690;
   --accent:   #7B5EA7;
-  --lime:     #C8FF57;
-  --lime-dim: rgba(200,255,87,0.12);
+  --lime:     #DA70D6;
+  --lime-dim: rgba(218,112,214,0.12);
   --shadow:   0 24px 70px rgba(0,0,0,0.32);
 }
 
@@ -224,7 +224,7 @@ nav.scrolled {
   background: var(--lime);
   color: #0A0A0F;
 }
-.btn-primary:hover { background: #d8ff6a; transform: translateY(-2px); box-shadow: 0 12px 24px rgba(200,255,87,0.16); }
+.btn-primary:hover { background: #e580db; transform: translateY(-2px); box-shadow: 0 12px 24px rgba(218,112,214,0.16); }
 
 .btn-ghost {
   background: rgba(255,255,255,0.03);
